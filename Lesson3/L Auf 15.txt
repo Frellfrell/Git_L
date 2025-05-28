@@ -1,0 +1,57 @@
+
+nano /sleeper.sh
+
+
+
+
+#!/bin/bash
+
+outputFile="sleeper_output.txt
+
+
+for i in {1..10}
+do
+   echo $(date +"%H.%M.%S")
+   echo $(ps -ef | wc -l)
+   if [[ $i < 10 ]]; then oder if [ $i -lt 10 ]; then
+sleep 3
+fi
+done
+
+$(cat  /proc/cpuinfo |  grep  "model name"  |  head -1 |  awk  -F   ':'   '{print $2}'  >>  $ outputFile)
+$(cat /etc/os-release  |  grep NAME  -w |  awk  -F '='  '{print $2}'  |  sed  "s/\"//g"  >>  $ outputFile)
+for i in {50..100}
+do   
+   >"$i.txt"
+fi
+done
+
+
+
+
+
+cat  /proc/cpuinfo //Intel (R) Xeon(R)
+cat  /proc/cpuinfo |  grep  "model name"//prozessor
+cat  /proc/cpuinfo |  grep  "model name"  |  head -1
+
+oder 
+cat  /proc/cpuinfo |  grep  "model name"  |  wc -l  //kol -vo yder
+
+./sleeper.sh 
+
+cat /etc/os-release   //Amazon Linex
+
+cat /etc/os-release  |  grep NAME  -w
+
+cat /etc/os-release  |  grep NAME  -w |  awk  -F '='  '{print $2}'
+
+cat /etc/os-release  |  grep NAME  -w |  awk  -F '='  '{print $2}'  |  sed  "s/\"//g"
+
+./sleeper.sh
+
+
+
+
+
+cat  /proc/cpuinfo |  grep  "model name"  |  head -1 |  awk  -F   ':'   '{print $2}' 
+
